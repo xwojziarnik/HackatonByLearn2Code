@@ -1,0 +1,163 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+nav {
+  background-color: rgb(170, 170, 170);
+  z-index: 1;
+}
+nav .navbar-brand {
+  font-weight: 700;
+  color: royalblue;
+}
+nav .navbar-brand i {
+  font-size: 50px;
+  color: aliceblue;
+}
+nav .navbar-toggler {
+  color: royalblue;
+  padding: 10px;
+  border: 2px solid royalblue;
+  font-weight: bold;
+}
+nav .nav-link {
+  color: royalblue;
+}
+nav .nav-link:hover {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  transition: color 0.4s, font-weight 0.4s;
+}
+
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+header .hero-bg {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #bdd4e7;
+  z-index: 0;
+}
+header .hero-text {
+  position: absolute;
+}
+header .holder {
+  border-radius: 10px;
+}
+header .fa-solid {
+  color: black;
+  margin-top: 100px;
+}
+header .fa-angles-left {
+  position: absolute;
+  left: 30%;
+}
+header .fa-angles-right {
+  position: absolute;
+  right: 30%;
+}
+header .wrapper {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  background-color: white;
+  max-width: 40vh;
+  max-height: 30vw;
+  border-radius: 15px;
+  text-align: center;
+}
+header .wrapper .content h6 {
+  font-weight: 700;
+  font-size: 20px;
+}
+header .wrapper .content p {
+  font-size: 12px;
+}
+header .wrapper .content button {
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+  header h1 {
+    font-size: 35px;
+  }
+  header p {
+    font-size: 20px;
+  }
+  header input {
+    font-size: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 3px solid black;
+  }
+  header .fa-solid {
+    margin-top: 40px;
+    font-size: 50px;
+  }
+  nav .navbar-toggler {
+    font-size: 10px;
+  }
+  nav .fa-bars-staggered {
+    font-size: 30px;
+  }
+}
+@media (min-width: 375px) {
+  header h1 {
+    font-size: 50px;
+  }
+  header p {
+    font-size: 30px;
+  }
+  header .fa-solid {
+    margin-top: 20px;
+    font-size: 60px;
+  }
+  nav .fa-bars-staggered {
+    font-size: 20px;
+  }
+  nav .navbar-brand {
+    font-size: 25px;
+  }
+  nav .nav-link {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 70px;
+  }
+  header p {
+    font-size: 40px;
+  }
+  header .fa-solid {
+    font-size: 100px;
+  }
+  header input {
+    font-size: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  nav .fa-bars-staggered {
+    font-size: 40px;
+  }
+  nav .navbar-brand {
+    font-size: 40px;
+  }
+  nav .nav-link {
+    font-size: 40px;
+  }
+}/*# sourceMappingURL=hackaton.css.map */
